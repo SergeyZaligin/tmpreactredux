@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
+
+import './Layout.scss'
+
 import Header from '../../components/Layout/Header'
+import Footer from '../../components/Layout/Footer'
 
 
 class Layout extends Component {
@@ -7,9 +11,11 @@ class Layout extends Component {
         return (
           <div className="wrapper">
             <Header className="header" />
-            
             <main className="main" role="main">{this.props.children}</main>
-            <footer className="footer">Footer</footer>
+            <Footer
+              justify="center"
+              alignItems="center"
+            />
           </div>
         )
     }

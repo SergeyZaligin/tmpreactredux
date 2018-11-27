@@ -23,19 +23,21 @@ const styles = {
   function ButtonAppBar(props) {
     const { classes } = props;
     return (
-      <div className={classes.root}>
-        <AppBar position="static">
-          <Toolbar>
-            
-            <Drawer />
+      <header className='header'>
+        <div className={classes.root}>
+          <AppBar position="static">
+            <Toolbar>
               
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-              News
-            </Typography>
-            <Button color="inherit">Login</Button>
-          </Toolbar>
-        </AppBar>
-      </div>
+              <Drawer />
+                
+              <Typography variant="h6" color="inherit" className={classes.grow}>
+                News
+              </Typography>
+              <Button color="inherit">Login</Button>
+            </Toolbar>
+          </AppBar>
+        </div>
+      </header>
     );
   }
   

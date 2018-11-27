@@ -1,0 +1,17 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header{
+    flex: 0 0 auto;
+ }
+ .main{
+    flex: 1 0 auto;
+ }
+ .footer{
+     color: #ffffff;
+     background-color: #2B2A29;
+    flex: 0 0 auto;
+ }
